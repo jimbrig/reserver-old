@@ -40,13 +40,15 @@ c(
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
+golem::add_module( name = "dashboard_module" ) # Name of the module
 golem::add_module( name = "name_of_module2" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
 golem::add_fct( "simulate_claims" )
+golem::add_fct( "create_lossrun" )
 golem::add_utils( "excel_helpers" )
+golem::add_utils( "data_helpers" )
 
 ## External resources
 ## Creates .js and .css files at inst/app/www

@@ -10,7 +10,8 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     shiny::fluidPage(
-      shiny::h1("reserver")
+      shiny::h1("reserver"),
+      mod_dashboard_module_ui("dashboard_module_ui_1")
     )
   )
 }
